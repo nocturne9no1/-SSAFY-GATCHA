@@ -1,0 +1,40 @@
+.home {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+
+  canvas {
+    width: 800 * 1.5;
+    height: 544 * 1.5px;
+  }
+  .game-control-explain {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-size: 40px;
+
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+    .png {
+      display: flex;   
+      justify-content: center;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    .key {
+      width: 80px;
+    }
+
+    hr {
+      border: solid 2px white;
+    }
+
+  }
+}

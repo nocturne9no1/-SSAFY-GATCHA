@@ -1,0 +1,12 @@
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px 50px;
+    grid-auto-rows: minmax(100px, auto);
+    .game_card {
+        width: 100px;
+        .card-img {
+            width: 100%;
+        }
+    }
+}

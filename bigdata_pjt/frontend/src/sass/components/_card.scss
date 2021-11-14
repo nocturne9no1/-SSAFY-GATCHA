@@ -1,0 +1,67 @@
+.card-body {
+  background-color: #000000;
+  width: 320px * 1.2;
+  height: 210px * .1.2;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  
+  span {
+    margin: 10px;
+    color: white;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 65px;
+  
+    .tag {
+      margin: 0 5px;
+      padding: 2px 5px;
+      color: white;
+      font-size: 12px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 4px;
+    
+      
+      height: 0;
+      opacity: 0;
+      overflow-y: hidden;
+      transition: height 0.5s ease, opacity 0.5s ease;
+    }
+  }
+
+  .card-content {
+    position: relative;
+    bottom: 0px;
+    .game-title {
+      font-size: 24px;
+      margin: 0 30px;
+    }
+    
+    .small-content {
+      font-size: 13px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .flatform-icons {
+      margin: 0 10px 0 20px;
+
+      i {
+        color: white;
+        margin: 0 2px;
+      }
+    }
+  }
+}
+
+
+
+

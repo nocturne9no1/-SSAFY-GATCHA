@@ -1,0 +1,351 @@
+
+
+$outline-width: 6px;
+$shadow-width: 4px;
+
+$button-background: #92CD41;
+$sec-button-background: #76c442;
+$shadow-color:  #4AA52E;
+
+$alt-button-background: #F7D51D;
+$alt-sec-button-background: #F2C409;
+$alt-shadow-color:  #E59400;
+
+$reset-button-background: #E76E55;
+$reset-sec-button-background: #CE372B;
+$reset-shadow-color:  #8C2022;
+
+
+
+.survey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F3F4F7;
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+
+
+  h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  progress {
+    -webkit-appearance: none;
+    height: 25px;
+    margin-bottom: 50px;
+    top: -$outline-width;
+    left: 0;
+    border-top: $outline-width black solid;
+    border-bottom: $outline-width black solid;
+    left: -$outline-width;
+    top: 0;
+    border-left: $outline-width black solid;
+    border-right: $outline-width black solid;
+  }
+  
+  ::-webkit-progress-bar {
+    background-color: grey;
+    // border-radius: 20px;
+  }
+  
+  ::-webkit-progress-value {
+    background-color: #C7B963;
+    // border-radius: 20px;
+  }
+
+
+  //background: $button-background;
+  //display: inline-block;
+  //position: relative;
+  //text-align: center;
+  //font-size: 30px;
+  //padding: 20px;
+  //font-family: 'DungGeunMo';
+  //src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  //text-decoration: none;
+  //color: white;
+  //box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
+
+
+  .genre-btn {
+    margin: 60px;
+    .genre-btn-item {
+    }
+
+
+    label{
+      padding: 20px;
+      // border-radius: 10px;
+      margin: 50px 50px;
+    }
+    .not-choose {
+      background-color: grey;
+    }
+
+    .yes-choose {
+      background-color: #5f91e2;
+    }
+
+    .no-choose {
+      background-color: #ff8989;
+    }
+
+    .yes {
+      &:hover {
+        background-color: #5f91e2;
+        transition: all 0.3s ease;
+      }
+    }
+    .no {
+      &:hover {
+        background-color: #ff8989;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  // .genre-btn {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin-bottom: 50px;
+  //   position: relative;
+  //   background-color: #eee;
+  //   border-radius: 5px;
+  //   overflow: hidden;
+
+  //   label {
+  //     z-index: 1;
+  //     padding: 0.5em 1em;
+  //     line-height: 1;
+  //     text-align: center;
+  //     cursor: pointer;
+  //     transition: color 0.2s ease;
+  //   }
+  //   input {
+  //     z-index: -9;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     opacity: 0;
+
+  //     &:checked + label {
+  //       color: #5f91e2;
+  //     }
+  //     // checked
+  //     &:first-of-type:checked {
+  //       ~ .genre-btn-background {
+  //         transform: translate(0);
+  //       }
+  //     }
+  //     &:nth-of-type(2):checked {
+  //       ~ .genre-btn-background {
+  //         transform: translate(100%, 0);
+  //       }
+  //     }
+  //   }
+  //   .genre-btn-background {
+  //     z-index: 0;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     height: 100%;
+  //     width: 50%;
+  //     background-color: #C7B963;
+
+  //     transform: translate(0);
+  //     transition: all 0.2s ease;
+  //   }
+  // }
+
+
+  .games {
+    display: flex;
+    .like {
+      color: #5f91e2;
+    }
+    .dislike {
+      color: #ff8989;
+    }
+    .game-item {
+      background-color: #000000;
+      width: 320px*1.4;
+      height: 210px*1.4;
+      border-radius: 3px;
+      position: relative;
+
+      margin: 0 5px 0 5px;
+
+      .card-img {
+        width: 320px*1.4;
+      }
+      
+      span {
+        padding-left: 10px;
+        font-size: 1.4rem;
+        margin: 5px;
+        color: white;
+      }
+      .fa-thumbs-up {
+        cursor: pointer;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #5f91e2;
+        }
+      }
+      .fa-thumbs-down {
+        padding-right: 10px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #ff8989;
+        }
+      }
+      .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .rating-btn {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .step-btn {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //button {
+  //  cursor: pointer;
+  //  width: 120px;
+  //  height: 40px;
+  //  font-size: 20px;
+  //  border-radius: 20px;
+  //  background-color: #C7B963;
+  //  border: none;
+  //}
+
+  .genre-btn-item {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+    z-index: 3;
+    // box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
+    top: -$outline-width;
+    left: 0;
+    border-top: $outline-width black solid;
+    border-bottom: $outline-width black solid;
+    left: -$outline-width;
+    top: 0;
+    border-left: $outline-width black solid;
+    border-right: $outline-width black solid;
+    &:before {
+    }
+  
+    &:after {
+    }
+  }
+  button {
+    z-index: 1;
+  }
+}
+
+
+
+
+
+
+.eightbit-btn {
+  background: $button-background;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  text-decoration: none;
+  color: white;
+  box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
+
+  &:hover,
+  &:focus {
+    background: $sec-button-background;
+    box-shadow: inset (-$shadow-width*1.5) (-$shadow-width*1.5) 0px 0px $shadow-color;
+  }
+
+  &:active {
+    box-shadow: inset $shadow-width $shadow-width 0px 0px $shadow-color;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+  }
+
+  &:before {
+    top: -$outline-width;
+    left: 0;
+    border-top: $outline-width black solid;
+    border-bottom: $outline-width black solid;
+  }
+
+  &:after {
+    left: -$outline-width;
+    top: 0;
+    border-left: $outline-width black solid;
+    border-right: $outline-width black solid;
+  }
+
+  &--reset {
+    background: $reset-button-background;
+    box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $reset-shadow-color;
+
+    &:hover,
+    &:focus {
+      background: $reset-sec-button-background;
+      box-shadow: inset (-$shadow-width*1.5) (-$shadow-width*1.5) 0px 0px $reset-shadow-color;
+    }
+
+    &:active {
+      box-shadow: inset $shadow-width $shadow-width 0px 0px $reset-shadow-color;
+    }
+
+  }
+
+  &--proceed {
+    background: $alt-button-background;
+    box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $alt-shadow-color;
+
+    &:hover,
+    &:focus {
+      background: $alt-sec-button-background;
+      box-shadow: inset (-$shadow-width*1.5) (-$shadow-width*1.5) 0px 0px $alt-shadow-color;
+    }
+
+    &:active {
+      box-shadow: inset $shadow-width $shadow-width 0px 0px $alt-shadow-color;
+    }
+
+  }
+}
+
+
+

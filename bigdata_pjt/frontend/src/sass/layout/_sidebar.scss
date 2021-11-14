@@ -1,0 +1,83 @@
+.sidebar {
+  background-color: #212121;
+  position: fixed;
+  height: 100%;
+  width: 60px;
+  overflow-y: hidden;
+  top: 0;
+  bottom: 0;
+  padding-top: 100px;
+  color: white;
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+
+  -webkit-transition:width .05s linear;
+  transition:width .05s linear;
+
+  &:hover {
+    width:220px;
+    overflow:visible;
+  }
+  
+  li {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 220px;
+    color:#F4D160;
+
+    &:hover {
+      color:#fff;
+      background-color:#5fa2db;
+    }
+    .nav-item {
+      position: relative;
+      display: table;
+      border-collapse:collapse;
+      border-spacing:0;
+      justify-content: space-around;
+      align-items: center;
+      transition: all .1s linear;
+      font-size: 14px;
+      i {
+        display: table-cell;
+        // margin: 20px;
+        position: relative;
+        width:60px;
+        height:60px;
+        text-align:center;
+        vertical-align:middle;
+        font-size: 20px;
+      }
+
+      span {
+        display: table-cell;
+        padding-left: 0px;
+        position: relative;
+        vertical-align: middle;
+        width: 100px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  .fas {
+    font-size: 30px;
+  }
+
+  .popular-item {
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    // 버튼 효과를 위한 임시 속성
+    cursor: pointer;
+    li {
+      padding: 5px 0;
+    }
+  }
+}

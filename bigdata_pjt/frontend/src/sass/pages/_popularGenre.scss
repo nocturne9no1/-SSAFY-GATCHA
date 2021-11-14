@@ -1,0 +1,19 @@
+.popular-genre {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    // transform: translateX(-50%) translateY(-50%);
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+
+    .popular-genre-header {
+        font-size: 50px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .popular-genre-list {
+        
+    }
+
+}

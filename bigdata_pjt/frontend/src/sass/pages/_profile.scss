@@ -1,0 +1,14 @@
+.profile {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+
+  .profile-area {
+    font-size: 50px;
+    color: #F3F4F7;
+    margin-bottom: 10px;
+  }
+}
