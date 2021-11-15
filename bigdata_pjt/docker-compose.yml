@@ -1,13 +1,13 @@
-version: '3'
+version: "3"
 
 services:
   backend:
     build:
       context: ./backend
       args:
-        DJANGO_ALLOWED_HOSTS: '*'
-        DJANGO_SECRET_KEY: django-insecure-mk(#&59-1kn=*_hi##1cvznh=l*wj+pc_f3x+1o&4d+sba$$+o8
-        DJANGO_CORS_ORIGIN_WHITELIST: '*'
+        DJANGO_ALLOWED_HOSTS: "*"
+        DJANGO_SECRET_KEY:
+        DJANGO_CORS_ORIGIN_WHITELIST: "*"
     command: gunicorn backend.wsgi --bind 0.0.0.0:8000
     ports:
       - "8000:8000"
@@ -15,11 +15,11 @@ services:
     build:
       context: ./frontend
       args:
-        API_URL: '*'
+        API_URL: "*"
     volumes:
       - build_folder:/frontend/build
     environment:
-      - CHOKIDAR_USEPOLLING=true   
+      - CHOKIDAR_USEPOLLING=true
   nginx:
     image: nginx:latest
     ports:
